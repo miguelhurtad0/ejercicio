@@ -1,0 +1,130 @@
+body {
+  margin: 0;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #ece5dd;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 100vh;
+  overflow: hidden;
+}
+
+
+.chat-header {
+  background-color: #075e54;
+  color: white;
+  width: 100%;
+  padding: 12px 20px;
+  box-shadow: 0 20px 5px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  user-select: none;
+}
+
+.chat-header-content {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  justify-content: center;
+}
+
+.chat-icon {
+  width: 40px;
+  height: 40px;
+  object-fit: cover;
+}
+
+.chat-header h1 {
+  font-size: 24px;
+  font-weight: 700;
+  margin: 0;
+}
+
+
+.chat-box {
+  background-color: white;
+  width: 90%;
+  max-width: 600px;
+  height: calc(100vh - 80px);
+  margin: 20px 0;
+  display: flex;
+  flex-direction: column;
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 20px 5px rgba(0, 0, 0, 0.1);
+}
+
+
+.messages {
+  flex: 1;
+  padding: 15px;
+  overflow-y: auto;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  background-color: #ece5dd;
+}
+
+.message{
+  max-width: 75%;
+  padding: 10px 14px;
+  border-radius: 18px;
+  font-size: 15px;
+  line-height: 1.4;
+  word-wrap: break-word;
+  box-shadow: 0 1px 0.5px rgba(0, 0, 0, 0.1);
+}
+
+.pie-pagina {
+  font-size: 1.25rem; 
+  font-weight: 500; 
+  user-select: none;
+}
+
+.user{
+  align-self: self-end;
+  background-color: #dcf8c6 ;
+  color: #262626;
+  border-bottom-right-radius: 3px;
+}
+
+.bot{
+  align-self: self-start;
+  background-color: white ;
+  color: #262626;
+  border-bottom-right-radius: 3px;
+}
+
+.input-area {
+  display: flex;
+  padding: 20px;
+  border-top: 1px solid #ddd;
+  background-color: white;
+}
+
+#messagesInput {
+  flex: 1;
+  padding: 12px 15px;
+  border: none;
+  border-radius: 20px;
+  font-size: 15px;
+  outline: none;
+  background-color: #f2f2f2;
+}
+
+#messagesImput:focus {
+    background-color: #e6e6e6;
+
+}
+
+#sendBtn {
+    margin-left: 10px;
+    background-color: #075e54;
+    color:#ddd;
+    border: none;
+    padding:0 20px;
+    border-radius: 20px;
+    cursor: pointer;
+    font-size: 15px;
+    font-weight: 600;
+    user-select: none;
+}
